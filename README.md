@@ -1,0 +1,2 @@
+# GNS
+apt update
