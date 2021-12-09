@@ -8,7 +8,7 @@ pkg install python
 
 pkg install git
 
-git clone: https://github.com/Stealph-Hydra/GNS/edit/main/README.md
+git clone: git clone https://github.com/Stealph-Hydra/GNS
 
 cd GNS
 
