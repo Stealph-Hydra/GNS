@@ -8,7 +8,7 @@ pkg install python
 
 pkg install git
 
-git clone: git clone https://github.com/Stealph-Hydra/GNS
+git clone: https://github.com/Stealph-Hydra/GNS
 
 cd GNS
 
